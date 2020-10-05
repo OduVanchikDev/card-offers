@@ -1,13 +1,676 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face{
+  font-family: 'Lato';  
+  src: url('./mobile/lato-medium.woff') format('woff');  
+  font-weight: normal;
+  font-style: normal;  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 900px;
+
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0 auto;
 }
+
+*{
+  box-sizing: border-box;
+  
+}
+
+
+.logoOne {
+  margin-top: 7px;
+}
+
+.heart {
+  position: relative;
+  margin-top: 15px;  /* (50px - height) / 2 */
+  margin-left: auto;
+  margin-right: 20px;
+  background-image: url('./mobile/heart.svg');
+  width: 24px;
+  height: 21px;
+  border: none;
+  background-color: inherit;
+}
+
+.menu {
+  padding: 0;
+  font-size: 0;
+  width: 20px;
+  height: 16px;
+  border: none;
+  margin: 17px 20px;
+  cursor: pointer;
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu-line {
+  width: 20px;
+  height: 2px;
+  background: #152242;
+  border-radius: 1px;
+}
+
+
+.header-top {
+  height: 50px;
+  display: flex;
+
+  border-bottom: 1px solid #E6E6E6;
+
+}
+
+
+.question {
+max-width: 326px;
+height: 56px;
+font-size: 22px;
+line-height: 28px;
+
+margin-left: 32px;
+margin-top: 22px;
+font-style: normal;
+font-weight: bold;
+
+color: rgba(0, 0, 0, 0.87);
+}
+.question2 {
+max-width: 326px;
+height: 56px;
+font-size: 22px;
+line-height: 28px;
+
+margin-left: 32px;
+margin-top: 15px;
+font-style: normal;
+font-weight: bold;
+
+color: rgba(0, 0, 0, 0.87);
+}
+.question1 {
+  max-width: 311px;
+  height: 30px;
+  font-size: 22px;
+  line-height: 28px;
+  
+  margin-left: 32px;
+  margin-top: 16px;
+  
+  color: rgba(0, 0, 0, 0.87);
+  }
+
+.question_title {
+max-width: 250px;
+height: 44px;
+font-size: 16px;
+line-height: 22px;
+
+margin-left: 32px;
+margin-top: 22px;
+font-style: normal;
+font-weight: normal;
+
+color: rgba(0, 0, 0, 0.72);
+}
+.question_title2 {
+max-width: 250px;
+height: 44px;
+font-size: 16px;
+line-height: 22px;
+
+margin-left: 32px;
+margin-top: -8px;
+font-style: normal;
+font-weight: normal;
+
+color: rgba(0, 0, 0, 0.72);
+}
+.question_title3 {
+max-width: 311px;
+height: 66px;
+font-size: 16px;
+line-height: 22px;
+
+margin-left: 32px;
+margin-top: -20px;
+font-style: normal;
+font-weight: normal;
+
+color: rgba(0, 0, 0, 0.72);
+}
+.question_title1 {
+  max-width: 250px;
+  height: 22px;
+  font-size: 16px;
+  line-height: 22px;
+  
+  margin-left: 32px;
+  margin-top: 8px;
+  
+  color: rgba(21, 34, 66, 0.6);
+  }
+
+.question_sub_title {
+max-width: 280px;
+height: 13px;
+font-size: 14px;
+line-height: 18px;
+
+margin-left: 32px;
+margin-top: 31px;
+margin-bottom: 4px;
+font-style: normal;
+font-weight: normal;
+
+color: rgba(0, 0, 0, 0.54);
+}
+.question_sub_title1 {
+  max-width: 189px;
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+  
+  margin-left: 32px;
+  margin-top: 32px;
+  
+  color: rgba(0, 0, 0, 0.54);
+  }
+  .question_sub_title2 {
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  margin-top: 4px;
+  
+  color: rgba(0, 0, 0, 0.54);
+  }
+  .question_sub_title3 {
+    max-width: 280px;
+    height: 13px;
+    font-size: 14px;
+    line-height: 18px;
+    
+    margin-left: 32px;
+    margin-top: 20px;
+    margin-bottom: 1px;
+    font-style: normal;
+    font-weight: normal;
+    
+    color: rgba(0, 0, 0, 0.54);
+    }
+  .question_sub_title4 {
+    max-width: 280px;
+    height: 13px;
+    font-size: 14px;
+    line-height: 18px;
+    
+    margin-left: 32px;
+    margin-top: 33px;
+    margin-bottom: 1px;
+    font-style: normal;
+    font-weight: normal;
+    
+    color: rgba(0, 0, 0, 0.54);
+    }
+
+
+.input {
+  margin-left: 32px;
+  width: 250px;
+  height: 38px;
+
+  margin-bottom: 24px;
+  border-bottom: 1px solid #E6E6E6;
+}
+.inputNumber {
+
+max-width: 115px;
+height: 28px;
+border: none;
+
+margin-top: 6px;
+
+font-size: 24px;
+line-height: 28px;
+
+margin-top: 4px;
+
+color: rgba(0, 0, 0, 0.87);
+
+} 
+.inputPhone {
+
+max-width: 190px;
+height: 28px;
+border: none;
+
+margin-top: 6px;
+
+font-size: 24px;
+line-height: 28px;
+
+margin-top: 4px;
+
+color: rgba(0, 0, 0, 0.87);
+
+} 
+.inputText {
+  margin-top: 9px;
+border: none;
+  font-size: 20px;
+line-height: 26px;
+
+color: rgba(0, 0, 0, 0.87);
+
+}
+
+.img {
+  margin-left: 13px;
+}
+
+
+.select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+max-width: 311px;
+height: 26px;
+border: none;
+
+margin-left: 32px;
+margin-top: 6px;
+color: rgba(0, 0, 0, 0.87);
+background: white;
+
+font-size: 20px;
+line-height: 26px;
+
+}
+
+
+
+.clear {
+  margin-left: 32px;
+  margin-top: 4px;
+}
+
+.button {
+  width: 48px;
+  height: 40px;
+
+  font-size: 20px;
+  line-height: 20px;
+ 
+  margin-top: -15px;
+  border: none;
+
+color: rgb(3, 104, 236);
+background: rgba(21, 34, 66, 0.1);
+border-radius: 32px;
+
+
+}
+
+.buttonInc {
+  position: relative;
+  height: 25px;
+
+  padding: 0 32px 0 32px;
+  text-align: center;
+  margin-bottom: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.buttonInc::after {
+  position: absolute;
+
+  bottom: 0;
+  left: 100px;
+  right: 100px;
+  content: '';
+  /* width: 70%; */
+  height: 1px;
+
+  background: #E6E6E6;
+}
+
+.countChildren {
+  margin-top: -10px;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 26px;
+  
+}
+
+.wrapper {
+  padding-top: 5rem;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.rm {
+  background: red;
+  border-radius: 20%;
+  color: #fff;
+  border: none;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.buttons {
+  max-width: 500px;
+  height: 88px;
+  margin-top: 32px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.button-left {
+position: relative;
+padding: 9px 16px;
+
+display: flex;
+justify-content: space-between;
+
+text-decoration: none;
+
+max-width: 114px;
+height: 42px;
+left: 24px;
+top: 20px;
+
+background: #F1F2F4;
+border-radius: 4px;
+}
+
+
+.button-right {
+position: relative;
+padding: 9px 16px;
+
+text-decoration: none;
+
+display: flex;
+justify-content: space-between;
+
+max-width: 114px;
+height: 42px;
+right: 24px;
+top: 20px;
+
+
+background: #0468FF;
+border-radius: 4px;
+
+}
+.buttonText {
+position: relative;
+height: 24px;
+left: 2px;
+
+font-weight: bold;
+font-size: 16px;
+line-height: 22px;
+margin-left: 15px;
+margin-right: auto;
+
+text-align: center;
+
+color: #0468FF;
+
+}
+
+.buttonText2 {
+position: relative;
+height: 24px;
+left: 2px;
+
+font-weight: bold;
+font-size: 16px;
+line-height: 22px;
+margin-right: 15px;
+margin-left: auto;
+color: white;
+
+text-align: center;
+
+}
+
+/* ==== FormDocs ===== */
+
+
+.box-icon {
+  max-width: 310px;
+  height: 60px;
+
+  text-align: center;
+
+  display: flex;
+  justify-content: space-around;
+
+}
+
+
+
+.incomeTypeBox {
+  display: flex;
+  margin-left: 28px;
+}
+
+.incomeTypeIcon {
+  /* position: relative; */
+  /* height: 80px; */
+  margin-top: 20px;
+  width: 104px;
+  text-align: center;
+  padding-top: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+.incomeTypeIcon_selected {
+  background-color: white;
+  width: 104px;
+  height: 104px;
+  box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.15);
+  z-index: 3;
+}
+
+.incomeTypeIcon input {
+  display: none;
+}
+
+
+.incomeTypeIcon__title {
+  display: block;
+  margin-top: 6px;
+  margin-left: 4px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+
+
+.lineLite {
+  position: relative;
+  margin-left: 32px;
+  margin-top: -28px;
+  z-index: 0;
+}
+
+.box-info {
+  max-width: 315px;
+  height: 144px;
+  margin-left: 32px;
+  padding: 14px;
+
+
+  font-style: italic;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: rgba(0, 0, 0, 0.54);
+}
+ 
+p {
+  margin: 0;
+  padding: 0;
+}
+.box-info p {
+font-style: italic;
+font-size: 14px;
+line-height: 18px;
+margin-bottom: 20px;
+}
+
+/* / FormDocs */
+
+/* ==== FormOne ===== */
+
+
+.salaryTypeIcon path {
+  fill: #999;
+  transition: fill 0.3s;
+}
+
+.salaryTypeIcon__selected path {
+  fill: #000;
+}
+.checkbox {
+  display: flex;
+  cursor: pointer;
+
+  margin-bottom: 36px;
+}
+.checkbox__contacts {
+  display: flex;
+  position: relative;
+
+  margin-bottom: 15px;
+}
+.checkbox__contacts:not(:last-child)::after {
+  display: flex;
+  margin-bottom: 15px;
+
+  position: absolute;
+  left:45px;
+  top:22px;
+
+
+  content: '';
+  height: 10px;
+  width: 1px;
+  background-color: #E6E6E6;
+
+}
+
+.checkbox__text {
+  /* position: absolute; */
+ 
+  margin-left: 14px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.72);
+  
+}
+
+.checkbox p {
+  margin-top: 4px;
+  font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+color: rgba(0, 0, 0, 0.54);
+}
+
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__pseudoinput {
+  /* position: fixed; */
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background: #eee;
+  margin-left: 36px;
+}
+
+.checkbox__input:checked + .checkbox__pseudoinput {
+  background-color: #0468FF;
+  background-image: url('./mobile/chekbox.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Nav Links */
+
+.nav__links {
+  padding: 0;
+  padding-top: 80px;
+  margin-left: 50px;
+  
+
+  
+  
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  /* align-items: center; */
+  justify-content: space-around;
+  height: 390px;
+  width: 100%;
+  cursor: pointer;
+
+ 
+}
+.nav__bar {
+  padding: 0;
+  margin-top: 50px;
+  background: #0468FF;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+
+  clip-path: circle(100px at -5% -20%);
+  -webkit-clip-path: circle(100px at -5% -20%);
+  transition: all 1s ease-out;
+}
+
+.nav__bar__open {
+  margin-top: 50px;
+  background: #0468FF;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+
+  z-index: 100;
+
+  clip-path: circle(700px at -5% -20%);
+  -webkit-clip-path: circle(1000px at -5% -20%);
+  transition: all 1s ease-out;
+}
+
+

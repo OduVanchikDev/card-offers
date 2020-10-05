@@ -1,0 +1,363 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  max-width: 932px;
+  margin: 0 10px;
+
+  background: #E5E5E5;
+  
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+*{
+  box-sizing: border-box;
+  
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+}
+
+.form_header {
+  display: flex;
+}
+
+.banc_logo {
+  width: 45px;
+  height: 45px;
+
+  margin-top: 17px;
+  margin-left: 16px;
+
+  position: absolute;
+}
+
+.block_title {
+  position: relative;
+  margin-left: 77px;
+  margin-top: 16px;
+
+}
+a {
+  text-decoration: none;
+}
+.banc_product_name {
+
+font-weight: bold;
+font-size: 16px;
+line-height: 22px;
+margin-right: 87px;
+margin-top: 5px;
+
+
+color: #2B87DB;
+}
+.banc_name {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 3px;
+  
+  color: #999999;
+}
+.property_name {
+  font-size: 14px;
+  line-height: 18px;
+
+  margin-top: 9px;
+  
+  
+  color: #999999;
+}
+
+.calculation_block_number {
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 1px;
+  margin-bottom: 3px;
+  
+  color: #212121;
+}
+.number_1 {
+  font-size: 18px;
+  line-height: 26px;
+
+}
+.number_2 {
+  font-size: 18px;
+  line-height: 26px;
+
+}
+.number_3 {
+  margin-top: 7px;
+
+}
+.number_4 {
+  margin-top: 7px;
+
+}
+.number_5 {
+  margin-top: 7px;
+
+}
+
+
+.calculation_block_text {
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #212121;
+}
+.parameter_calculation_block {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 6px 20px 0 77px;
+}
+
+.calculation_block {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 3px;
+
+}
+.block_buttons {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.more_detailed {
+  padding: 0;
+  display: flex;
+  background-color: inherit;
+  border: none;
+  font-size: 12px;
+  line-height: 18px;
+  cursor: pointer;
+  margin: 17px 0 25px 76px;
+  color: #2B87DB;
+}
+.arrow {
+  margin-top: 6px;
+  margin-left: 4px;
+}
+
+.calculate {
+  /* width: 140px;
+  height: 22px; */
+  border-radius: 14px;
+  display: flex;
+  border: 1px rgba(43, 135, 219, 0.1);
+  margin: 12px 20px 20px 0;
+  cursor: pointer;
+
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: bold;
+  padding: 5px 10px;
+  color: #2B87DB;
+
+  background: rgba(43, 135, 219, 0.1);
+}
+
+.arrange {
+  /* width: 140px;
+  height: 22px; */
+  border-radius: 14px;
+  display: flex;
+  margin: 12px 20px 20px 0;
+  border: 1px solid #2B87DB;
+
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: bold;
+  padding: 0 19px 0 19px;
+  cursor: pointer;
+
+  color: #2B87DB;
+  background: inherit;
+}
+
+@media screen and (max-width: 775px) {
+  .calculation_block {
+    width: 33.333%;
+  }
+  .arrange {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    margin: 30px auto;
+
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #E8F2FA;
+    box-shadow: 0px 5px 10px rgba(19, 51, 75, 0.1);
+    border-radius: 6px;
+  }
+  .form_header {
+  
+    position: relative;
+  }
+  .banc_name {
+    font-size: 17px;
+    line-height: 19px;
+    margin-top: 5px;
+    
+    
+    color: #999999;
+  }
+  .banc_logo {
+    width: 45px;
+    height: 45px;
+
+  
+    right: 21px;;
+    top: 5px;
+
+    position: absolute;
+  }
+  .block_title {
+    margin-left: 20px;
+    margin-top: 16px;
+  
+  }
+  .property_name {
+    margin-top: 8px;
+  }
+  .parameter_calculation_block {
+    display: flex;
+    flex-direction: column;
+    margin: 14px 0 0 20px;
+  }
+  .block_buttons {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .more_detailed {
+    padding: 0;
+    background-color: inherit;
+    border: none;
+    font-size: 14px;
+    line-height: 18px;
+
+  
+    margin: 3px 0 0 22px;
+    color: #2B87DB;
+  }
+
+  .arrow {
+    margin-top: 6px;
+    margin-left: 3px;
+  }
+  .calculate {
+    margin-bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #2B87DB;
+    mix-blend-mode: normal;
+    border-radius: 0px 0px 6px 6px;
+  
+    font-size: 16px;
+    line-height: 22px;
+    
+    text-align: center;
+  
+    
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 0 19px 0 19px;
+
+    cursor: pointer;
+    position: relative;
+  
+  }
+
+
+  .arrowWhite {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+  }
+
+
+
+  .calculation_block {
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+
+    width: 100%;
+
+    margin-bottom: 0px;
+    padding-right: 0px;
+    margin-top: -4px;
+    
+  }
+  .calculation_block_number {
+    width: 140px;
+  
+    font-size: 14px;
+    line-height: 18px;
+    margin-right: 0px;
+    margin-left: 17px;
+    margin-top: 0px;
+  
+    color: #212121;
+
+    order: 2;
+  }
+
+    .number_2{
+    font-size: 18px;
+    line-height: 26px;
+    order: 2;
+    }
+   .number_1 {
+    font-size: 18px;
+    line-height: 26px;
+    order: 2;
+  
+    
+  }
+  .number_3 {
+    margin-top: 10px;
+  }
+  .number_4 {
+    margin-top: 10px;
+  }
+  .number_5 {
+    margin-top: 10px;
+  }
+
+.calculation_block_text {
+  width: 145px;
+
+  text-transform: capitalize;
+  max-width: 145px;
+  max-height: 16px;
+  font-size: 12px;
+  line-height: 16px;
+}
+.text_3 {
+  margin-top: 12px;
+}
+.text_4 {
+  margin-top: 16px;
+}
+
+.text_5 {
+  margin-top: 18px;
+}
+
+  
+}
